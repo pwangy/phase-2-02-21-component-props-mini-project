@@ -4,11 +4,10 @@ import About from './About'
 import ArticleList from './ArticleList'
 
 const App = () => {
-  console.log(blogData)
 	return (
 		<div className='App'>
       <Header name={blogData.name} />
-      <About src={blogData.image} about={blogData.about} />
+      <About img={blogData.image} about={blogData.about} />
       <ArticleList posts={blogData.posts} />
 		</div>
 )}

@@ -18,14 +18,13 @@ const minutesToEmoji = (minutes) => {
 
 const Article = ({ title, date = 'January 1, 1970', preview, minutes }) => {
 	return (
-		<>
+		<article>
 			<h3>{title}</h3>
 			<small>
 				{date}&nbsp;&nbsp;&middot;&nbsp;&nbsp;{minutesToEmoji(minutes)} Time to read {minutes} minutes
 			</small>
-
 			<p>{preview}</p>
-		</>
+		</article>
 )}
 
 export default Article
